@@ -1,0 +1,67 @@
+/* .header {
+    transition: background 300ms ease-in-out 0s,padding 140ms ease-in-out, transform 140ms ease-in-out 140ms;
+    background-color: transparent !important;
+} */
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8dfdb;
+    color: #000;
+    display: block;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 1;
+    /* An element with greater stack order is always 
+    in front of an element with a lower stack order */
+    z-index: 10;
+    /* Not sure */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    padding: 0;
+}
+
+.header .navbar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 2.5vw;
+    /* padding-bottom: 2.5vw; */
+    padding-left: 3vw;
+    padding-right: 2vw;
+}
+
+/* Links on the right side of nav bar */
+.nav-link {
+    font-size: 20px;
+    color: black;
+}
+
+.top-bun {
+    transform: translatey(-10px);
+    width: 35px;
+    height: 2px;
+    background-color: black;
+}
+
+.bottom-bun {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+}
+.fa {
+    width: 50px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    color: white;
+  }
