@@ -1,5 +1,114 @@
+/* Use classes as labels for css - make simple and readable */
+/* Make sections and table of contents */
+
+/*
+      table of contents
+
+      1. global styles
+
+      2. typography
+
+      3. layout
+
+      4. components
+        4.1 buttons
+*/
+
+
+
+/* ====================
+      global styles 
+   ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Inknut Antiqua;
+}
+
+/* @media screen and (min-width: 0) and (max-width: 2119px) and 
+(orientation: landscape) {
+    body {
+        font-size: calc(.1 * 1.2vw + 1rem);
+    }
+} */
+
+
+/* Navigation */
 
 .home_tab {
     border-bottom: 1px solid black;
 }
+
+/* portfolio */
+
+.portfolio-hover-display {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.portfolio-hover-items {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0 auto;
+    /* No idea */
+    /* box-sizing: border-box; */
+   
+}
+.portfolio-hover-item {
+    padding-top: 80px;
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active,
+.portfolio-hover-item, .portfolio-hover-item:hover, .portfolio-hover-item:focus, .portfolio-hover-item:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.portfolio-hover-items-list {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-direction: column;
+    max-width: 100%;
+    list-style-type: none;
+    pointer-events: auto;
+}
+
+.portfolio-hover-items-list li {
+    pointer-events: auto;
+}
+
+.portfolio-hover-item-title {
+    color: inherit;
+    /* Responsible for the distance between Projects */
+    line-height: 1.5em;
+    padding: 1.2rem 0;
+}
+
+/* when the browser window is 2119px wider or less or 0px or wider and portrait mode */
+@media screen and (min-width: 0) and (max-width: 2119px) and (orientation: portrait) {
+    .portfolio-hover-item-title {
+        /* font-size: 100px; */
+        font-size: calc((1.1 - 1) * 1.2vh + 1rem);
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 2119px) and (orientation: landscape) {
+    .portfolio-hover-item-title {
+        font-size: calc(4.4vw + 1rem);
+    }
+}
+
+
+
+
 

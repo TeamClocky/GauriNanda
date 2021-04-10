@@ -1,4 +1,39 @@
 {% extends "layout.html" %}
 
+{% block css %}
+<link href="{{ url_for('static', filename='about.css') }}" rel="stylesheet">
+{% endblock css %}
+
 {% block content %}
+
+<div class="content">
+    <div class="row">
+        <div class="col">
+            <div class="about-section">
+                <h2 style="white-space: pre-wrap;">Gauri Nanda is a Creative Director based in Los Angeles, California</h2>
+                <p style="white-space: pre-wrap;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum laboriosam dolor itaque sint a ipsam obcaecati dicta ex, unde quaerat ratione quia ducimus deleniti omnis dignissimos voluptate iure libero!
+                </p>
+                <p style="white-space: pre-wrap;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum laboriosam dolor itaque sint a ipsam obcaecati dicta ex, unde quaerat ratione quia ducimus deleniti omnis dignissimos voluptate iure libero!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="product-display">
+        <div class="row">
+            <div class="col-sm">
+                <img src="static/Toymail Page/blue Racoon toy_.jpg" alt="blue Toymail toy">
+                <button type="button" class="btn">Shop Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="static/Toymail Page/white walkie.jpg" alt="white Toymail toy">
+                <button type="button" class="btn">Shop Now</button>
+            </div>
+            <div class="col-sm">
+                <img src="static/Toymail Page/red_orange_walkie.jpg" alt="red Toymail toy">
+                <button type="button" class="btn">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

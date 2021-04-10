@@ -10,34 +10,42 @@
 }
 
 body {
-    background-color: #f8dfdb;
+    background-color: #f3dddf;
     color: #000;
     display: block;
 }
 
-.navbar {
-    position: absolute;
+.header .navbar {
+    position: relative;
+    /* An element with greater stack order is always 
+    in front of an element with a lower stack order */
+    z-index: 2;
+    width: 100%;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
     top: 0;
     right: 0;
     left: 0;
     line-height: 1;
-    /* An element with greater stack order is always 
-    in front of an element with a lower stack order */
-    z-index: 10;
     /* Not sure */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    padding: 0;
 }
 
+/* Media queries don't change the specificity of your selectors */
+/* The selector appearing later in stylesheet overrides the earlier */
+/* Putting the media queries last is the best way of setting up css */
+
+/* Change something when the browser window is 1024px wide or less. */
+@media only screen and (pointer: coarse) and (max-width: 1024px),
+screen and (max-width: 799px) {
 .header .navbar {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    padding-top: 2.5vw;
-    /* padding-bottom: 2.5vw; */
-    padding-left: 3vw;
-    padding-right: 2vw;
+    padding: 6vw;
+    }     
 }
+
+
 
 /* Links on the right side of nav bar */
 .nav-link {
