@@ -4,25 +4,27 @@
 {% endblock css %}
 
 {% block content %}
+
+
 <div class="portfolio-hover-display">
     <div class="portfolio-hover-items">
         <ul class="portfolio-hover-items-list">
             <li>
-                <a class="portfolio-hover-item" href="/work/clocky">
+                <a class="portfolio-hover-item" onmouseover="onHover(0)" onmouseout="outHover(0)" id="clocky_hover_item" href="/work/clocky">
                     <h1 class="portfolio-hover-item-title">
                         <span class="portfolio-hover-item-title-content">Clocky</span>
                     </h1>
                 </a>
             </li>
             <li>
-                <a class="portfolio-hover-item" href="/work/toymail">
+                <a class="portfolio-hover-item" onmouseover="onHover(1)" onmouseout="outHover(1)" id="toymail_hover_item" href="/work/toymail">
                     <h1 class="portfolio-hover-item-title">
                         <span class="portfolio-hover-item-title-content">Toymail</span>
                     </h1>
                 </a>
             </li>
             <li>
-                <a class="portfolio-hover-item" href="#">
+                <a class="portfolio-hover-item" onmouseover="onHover(2)" onmouseout="outHover(2)" id="_hover_item" href="#">
                     <h1 class="portfolio-hover-item-title">
                         <span class="portfolio-hover-item-title-content">Project 3</span>
                     </h1>
@@ -32,3 +34,8 @@
     </div>
 </div>
 {% endblock content %}
+
+
+{% block js %}
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock js %}

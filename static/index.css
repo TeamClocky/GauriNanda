@@ -43,14 +43,21 @@
 /* portfolio */
 
 .portfolio-hover-display {
+    overflow: hidden;
+    background-image: none;
+    background-size: cover;
+    background-position: center center;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     flex-grow: 1;
     flex-shrink: 1;
 }
-
+a { 
+    color:white;
+    text-decoration: none;
+}
 .portfolio-hover-items {
     text-align: center;
     display: flex;
@@ -92,6 +99,10 @@
     /* Responsible for the distance between Projects */
     line-height: 1.5em;
     padding: 1.2rem 0;
+    width: auto;
+    /* Makes it so the div fits around the content */
+    display: inline-block;
+    /* max-width: 100%; */
 }
 
 /* when the browser window is 2119px wider or less or 0px or wider and portrait mode */
@@ -107,7 +118,6 @@
         font-size: calc(4.4vw + 1rem);
     }
 }
-
 
 
 

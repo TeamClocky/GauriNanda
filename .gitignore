@@ -2,3 +2,6 @@
 __pycache__
 
 config.py
+*env
+*.pyc
+*.pyo

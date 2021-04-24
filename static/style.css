@@ -13,6 +13,11 @@ body {
     background-color: #f3dddf;
     color: #000;
     display: block;
+    background-image: none;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    /* height: 300px; */
 }
 
 .header .navbar {
