@@ -1,0 +1,45 @@
+form{
+    width: 90%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.input-group{
+    margin-bottom: 30px;
+
+}
+
+input, textarea{
+    width: 100%;
+    padding: 4px;
+}
+
+button{
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 3px 0;
+    outline: none;
+    background: #e1b7bb;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row .input-group{
+    flex-basis: 45%;
+}
+
+p{
+    opacity: 50%;
+    font-size: smaller;
+    margin-top: 5px;
+    margin-bottom: -8px;
+}

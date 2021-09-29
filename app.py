@@ -18,26 +18,32 @@ app = Flask(__name__)
 
 # app.config
 
+
 @app.route('/')
 @app.route('/work')
 def work():
     return render_template("index.html")
 
+
 @app.route('/about')
 def about():
     return render_template("about.html")
+
 
 @app.route('/work/clocky', methods=['GET', 'POST'])
 def clocky():
     return render_template("clocky.html")
 
+
 @app.route('/work/toymail', methods=['GET', 'POST'])
 def toymail():
     return render_template("toymail.html")
 
+
 @app.route('/press', methods=['GET', 'POST'])
 def press():
     return render_template("press.html")
+
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -50,6 +56,7 @@ def contact():
         # mail.send(msg)
         return render_template("contact.html", success=True)
     return render_template('contact.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
