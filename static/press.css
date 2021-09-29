@@ -1,0 +1,65 @@
+hr {
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.head-press {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.main-press-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.main-press-image {
+    flex-basis: 40%
+}
+
+.main-press-text {
+    font-size: 20px;
+    padding-right: 70px;
+}
+
+.press-coverage {
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.press-coverage-articles {
+    display: block;
+    margin-right: 40px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    margin-left: 20px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.press-coverage-text {
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.press-coverage-date {
+    margin-top: 10px;
+    text-align: left;
+}
