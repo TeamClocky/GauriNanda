@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='toymail.css') }}" rel="stylesheet">
+{% endblock css %}
+
+{% block content %}
+
+<div class="toymail">
+
+    <div class="about-toymail">
+        <h2>TOYMAIL</h2>
+        <p><br/>THE TEXT WILL GO HERE</p>
+    </div>
+    <div class="row" style="margin: 40px 40px 40px 40px;">
+        <div class="column">
+            <img src="../static/images/Toymail_Page/red_orange_walkie.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../static/images/Toymail_Page/white_toy_hand.jpg" style="width:100%">
+        </div>
+    </div>
+    <div class="toymail-img">
+        <div class="three-clocky-shop">
+
+        <img src="../static/images/Toymail_Page/Content%20-%20Talkie%20on%20Table%202.jpg" class="toymail-img">
+        <img src="../static/images/Toymail_Page/blue%20Racoon%20toy_.jpg" class="toymail-img">
+        <img src="../static/images/Toymail_Page/white%20walkie.jpg" class="toymail-img">
+        <img src="../static/images/Toymail_Page/pink%20walkie.jpg" class="toymail-img">
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}

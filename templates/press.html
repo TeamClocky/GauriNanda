@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='press.css') }}" rel="stylesheet">
+{% endblock css %}
+
+{% block content %}
+
+<div class="press">
+
+    <div class="head-press">
+        <h2>Press</h2>
+        <p>Media and Assets</p>
+    </div>
+
+    <div class="main-press-article">
+        <div class="main-press-text">
+            <h3>Cover of Inc. Magazine</h3>
+            <p>Text goes here</p>
+        </div>
+        <div class="main-press-image">
+            <img src="../static/images/Toymail_Page/InitialPrototype_large2.jpg" align="right">
+        </div>
+    </div>
+
+    <div class="press-coverage">
+        <h3>Press Coverage</h3>
+        <div class="press-coverage-articles">
+            <div class="row" style="margin-bottom: 40px; margin-top: 40px;">
+                <div class="column">
+                    <img src="../static/images/Clocky_Page/Clocky_OverheadCol__5.jpg" style="width:100%">
+                    <hr>
+                    <p>Text will go here</p>
+                    <p class="press-coverage-date">Date will go here</p>
+                </div>
+                <div class="column">
+                    <img src="../static/images/Clocky_Page/Clocky_OverheadCol__7.jpg" style="width:100%">
+                    <hr>
+                    <p class="press-coverage-text">Text will go here</p>
+                    <p class="press-coverage-date">Date will go here</p>
+                </div>
+                <div class="column">
+                    <img src="../static/images/Clocky_Page/Clocky_OverheadCol__3.jpg" style="width:100%">
+                    <hr>
+                    <p class="press-coverage-text">Text will go here</p>
+                    <p class="press-coverage-date">Date will go here</p>
+                </div>
+                <div class="column">
+                    <img src="../static/images/Clocky_Page/Clocky_OverheadCol__3.jpg" style="width:100%">
+                    <hr>
+                    <p class="press-coverage-text">Text will go here</p>
+                    <p class="press-coverage-date">Date will go here</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock content %}

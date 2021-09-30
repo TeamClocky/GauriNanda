@@ -1,0 +1,23 @@
+.about-toymail {
+    text-align: center;
+}
+
+.toymail-img {
+    display: block;
+    margin: 50px auto 40px auto;
+    width: 90%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    margin-left: 20px;
+    content: "";
+    clear: both;
+    display: table;
+}

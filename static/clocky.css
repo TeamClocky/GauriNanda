@@ -1,0 +1,43 @@
+.about-clocky {
+    text-align: center;
+}
+
+.main-clocky-img {
+    display: block;
+    margin: 50px auto 40px auto;
+    width: 90%;
+}
+
+.three-clocky-shop {
+    background: white;
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    margin-left: 20px;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column a {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: pink;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}

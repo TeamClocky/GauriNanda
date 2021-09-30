@@ -1,4 +1,47 @@
 {% extends "layout.html" %}
 
+{% block css %}
+    <link href="{{ url_for('static', filename='clocky.css') }}" rel="stylesheet">
+{% endblock css %}
+
 {% block content %}
+
+<div class="clocky">
+
+    <div class="about-clocky">
+        <h2>CLOCKY</h2>
+        <p><br/>THE TEXT WILL GO HERE</p>
+    </div>
+
+    <div class="main-clocky-img">
+        <img src="../static/images/Clocky_Page/Blue_clocky.jpg" class="main-clocky-img">
+    </div>
+
+    <div class="three-clocky-shop">
+        <div class="row" style="margin-bottom: 40px; margin-top: 40px;">
+            <div class="column">
+                <img src="../static/images/Clocky_Page/Clocky_OverheadCol__5.jpg" style="width:100%">
+                <a href="https://clocky.com/pages/shop" target="_blank">Shop Now</a>
+            </div>
+            <div class="column">
+                <img src="../static/images/Clocky_Page/Clocky_OverheadCol__7.jpg" style="width:100%">
+                <a href="https://clocky.com/pages/shop" target="_blank">Shop Now</a>
+            </div>
+            <div class="column">
+                <img src="../static/images/Clocky_Page/Clocky_OverheadCol__3.jpg" style="width:100%">
+                <a href="https://clocky.com/pages/shop" target="_blank">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-clocky-img">
+        <img src="../static/images/Clocky_Page/pink_clocky.jpg" class="main-clocky-img">
+        <img src="../static/images/Clocky_Page/floating-clocky-navy.jpg" class="main-clocky-img">
+        <img src="../static/images/Clocky_Page/LifestyleBack_Real__6.jpg" class="main-clocky-img">
+        <img src="../static/images/Clocky_Page/LifestyleBack_Real__2.jpg" class="main-clocky-img">
+    </div>
+
+
+</div>
+
+
 {% endblock content %}
