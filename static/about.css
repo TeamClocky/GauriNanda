@@ -1,3 +1,7 @@
+p {
+    font-family: Quador Light;
+}
+
 .about-section {
     text-align: center;
     margin: auto;
@@ -12,6 +16,7 @@ h2 {
     font-weight: 300;
     letter-spacing: 0em;
     display: block;
+    font-family: Monarkly Book;
 }
 
 .product-display {

@@ -73,6 +73,11 @@ a {
 .portfolio-hover-item {
     padding-top: 80px;
 }
+
+.portfolio-hover-item-title-content:hover {
+    color: white;
+}
+
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active,
 .portfolio-hover-item, .portfolio-hover-item:hover, .portfolio-hover-item:focus, .portfolio-hover-item:active {
     color: inherit;
